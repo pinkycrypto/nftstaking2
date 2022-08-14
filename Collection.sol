@@ -19,7 +19,7 @@ contract Collection is ERC721Enumerable, Ownable {
     bool public paused = false;
     // 1 SLOT
 
-    constructor() ERC721("CryptoFighter NFT Collection", "N2D") {}
+    constructor() ERC721("CryptoFighter NFT Collection", "CF") {}
 
     function mint(address _to, uint256 _mintAmount) external payable {
         uint256 supply = totalSupply();
